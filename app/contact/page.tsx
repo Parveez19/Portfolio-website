@@ -1,6 +1,8 @@
 'use client';
 import Head from 'next/head';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -10,11 +12,30 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log(formData); // Integrate EmailJS or API call here
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const result = await emailjs.send(
+      'service_lgoj53u',     
+      'template_k2lik64',
+      {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      },
+      '9RzVo0aa9PLglk_xj'      // e.g., 'aBcDeFgHiJK123456'
+    );
+
+    console.log('Email successfully sent:', result.text);
     setSubmitted(true);
-  };
+  } catch (error) {
+    console.error('Failed to send email:', error);
+    alert('Something went wrong. Please try again.');
+  }
+};
+
 
   return (
     <>
@@ -28,9 +49,9 @@ export default function Contact() {
           <h1 className="text-4xl font-bold mb-6 text-center">Get in Touch</h1>
           <p className="text-gray-400 text-center mb-8">
             Fill out the form below or email me at{' '}
-            <a href="mailto:your.email@example.com" className="text-indigo-400 underline">
-              your.email@example.com
-            </a>
+            <a href="mailto:ahmedparveez47@gmail.com" className="text-indigo-400 underline">
+      ahmedparveez47@gmail.com
+                  </a>
           </p>
 
           {submitted ? (

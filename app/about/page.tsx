@@ -41,7 +41,7 @@ export default function About() {
 
         {/* Skills */}
         <section className="mt-16 max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold mb-6 text-center">Skills & Technologies</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center text-black">Skills & Technologies</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             {[
               'HTML',
