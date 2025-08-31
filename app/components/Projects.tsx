@@ -14,7 +14,7 @@ const projects = [
     description: 'A complete job posting and application portal built for final year project.',
     image: '/jobportal.jpg',
     technologies: ['React', 'Node.js', 'MongoDB'],
-    liveUrl: '',
+    liveUrl: 'https://devhire-portal.vercel.app/',
     githubUrl: 'https://github.com/Parveez19/Job-portal',
   },
   
