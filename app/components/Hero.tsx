@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 
 export default function Hero() {
   const [text, setText] = useState('')
-  const fullText = "Hi, I'm Parveez - Full Stack Software Developer"
+  const fullText = "Hi, I'm Parveez - Software Developer"
 
   useEffect(() => {
     let index = 0
@@ -21,7 +21,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-blue-900">
+     <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-blue-900">
         <motion.div
           animate={{
             scale: [1, 1.2, 1],

@@ -10,7 +10,7 @@ const projects = [
     githubUrl: 'https://github.com/ddprestige/backend-pdd/',
   },
   {
-    title: 'Job Portal',
+    title: 'Dev Hire',
     description: 'A complete job posting and application portal built for final year project.',
     image: '/jobportal.jpg',
     technologies: ['React', 'Node.js', 'MongoDB'],
@@ -18,6 +18,14 @@ const projects = [
     githubUrl: 'https://github.com/Parveez19/Job-portal',
   },
   
+   {
+    title: 'Customer Churn Prediction using Machine Learning',
+    description: 'A machine learning model that predicts whether a customer is likely to leave a service based on their usage patterns and account details. The project includes data cleaning, feature engineering, training an XGBoost model, and deploying a simple Streamlit app that allows users to input customer details and get an instant churn risk prediction. ',
+    image: '/churn.jpg',
+    technologies: ['Python', 'XGBoost', 'SHAP', 'Streamlit'],
+    liveUrl: 'https://customer-churn-prediction-3.streamlit.app/',
+    githubUrl: 'https://github.com/Parveez19/Customer-Churn-Prediction',
+  },
   {
     title: 'Distracted Driver Alert System',
     description: 'Final year deep learning project that detects distracted driving behavior using a ResNet-50 model. Trained on a labeled image dataset to classify actions such as texting, talking, or hands off the wheel.',
@@ -26,6 +34,8 @@ const projects = [
     liveUrl: '',
     githubUrl: 'https://github.com/Parveez19/',
   },
+ 
+
   
 ];
 
