@@ -20,7 +20,7 @@ export default function Home() {
             <a href="https://github.com/Parveez19" target="_blank" rel="noopener noreferrer">
               <Image src="/github.png" alt="GitHub" width={30} height={30} />
             </a>
-            <a href="https://www.linkedin.com/in/parveez-ahmed-5b8423227" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/parveez-ahmed" target="_blank" rel="noopener noreferrer">
               <Image src="/linkedin.png" alt="LinkedIn" width={30} height={30} />
             </a>
             <a href="mailto:ahmedparveez090@gmail.com">
@@ -31,8 +31,8 @@ export default function Home() {
          <ScrollSection className="max-w-2xl mx-auto bg-gray-800 p-6 rounded-xl shadow-md">
   <h2 className="text-xl font-semibold mb-2 text-indigo-300">What I Do</h2>
   <p className="text-gray-300">
-    I develop full-stack applications, build custom dashboards, create REST APIs, and integrate frontend
-    designs with scalable backend solutions.
+    I design and build end-to-end applications, develop clean backend architectures, create robust REST APIs, and turn raw ideas into functional, scalable products.
+My work ranges from building dashboards and automation tools to integrating frontend designs with fast, reliable backend systems.
   </p>
 </ScrollSection>
         </section>

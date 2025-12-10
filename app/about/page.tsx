@@ -28,13 +28,15 @@ export default function About() {
           <div>
             <h1 className="text-4xl font-bold mb-4 text-black">About Me</h1>
             <p className="text-gray-400 mb-4">
-              Hi! I'm <span className="text-indigo-400 font-semibold">Parveez</span>, a passionate Full-Stack Web Developer based in Bangalore. I enjoy building responsive, scalable web applications using modern technologies.
+              Hi! I'm <span className="text-indigo-400 font-semibold">Parveez</span>, I am currently building my skills in backend development, data engineering, and practical software fundamentals.
             </p>
             <p className="text-gray-500 mb-4">
-              I specialize in JavaScript, React, Next.js, Node.js, and MongoDB. I also have experience working with Express.js, REST APIs, and MySQL. I love solving real-world problems and turning ideas into elegant, user-friendly digital solutions.
+              I work on small end-to-end projects to strengthen my understanding of how real applications are built.  
+              My focus right now is improving in Python, SQL, backend logic, and creating simple but functional tools.
             </p>
             <p className="text-gray-500">
-             I enjoy working on side projects like <strong>Prestige Dream Decor</strong>, a web platform I designed and built for an interior design company.
+             I have built a few practice projects like dashboards, basic APIs, and small web tools to get hands-on experience.  
+             Each project helps me understand system design, data flow, and writing cleaner, more consistent code.
             </p>
           </div>
         </section>
@@ -44,18 +46,22 @@ export default function About() {
           <h2 className="text-2xl font-bold mb-6 text-center text-black">Skills & Technologies</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             {[
-              'HTML',
-              'CSS',
-              'JavaScript',
-              'React',
-              'Next.js',
-              'Node.js',
-              'Express.js',
-              'MongoDB',
-              'MySQL',
-              'Tailwind CSS',
-              'Git/GitHub',
-              'REST APIs',
+              
+                'JavaScript',
+                'TypeScript',
+                'React.js',
+                'Next.js',
+                'Node.js',
+                'Express.js',
+                'Python',
+                'SQL',
+                'MySQL',
+                'MongoDB',
+                'REST APIs',
+                'Tailwind CSS',
+                'Git & GitHub'
+
+
             ].map((skill) => (
               <span
                 key={skill}
