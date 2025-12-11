@@ -20,8 +20,14 @@ export default function Hero() {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Animated Background */}
-     <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-blue-900">
+      
+     
+      <div className="absolute inset-0 
+        /* LIGHT MODE: Use a subtle white/light-gray */
+        bg-white 
+        /* DARK MODE: Use your primary dark gradient colors */
+        dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800">
+        
         <motion.div
           animate={{
             scale: [1, 1.2, 1],
@@ -32,8 +38,13 @@ export default function Hero() {
             repeat: Infinity,
             ease: "linear"
           }}
-          className="absolute top-1/4 left-1/4 w-32 h-32 bg-blue-200 dark:bg-blue-800 rounded-full opacity-20"
+          className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full opacity-20
+            /* LIGHT MODE: Subtle light color */
+            bg-gray-200 
+            /* DARK MODE: Subtle dark emerald color */
+            dark:bg-emerald-800"
         />
+        
       </div>
 
       {/* Content */}
@@ -42,13 +53,16 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-heading font-bold mb-6"
+          className="text-4xl md:text-6xl font-heading font-bold mb-6 
+            /* Light/Dark Text Color */
+            text-gray-900 dark:text-white"
         >
           {text}
+          
           <motion.span
             animate={{ opacity: [1, 0, 1] }}
             transition={{ duration: 1, repeat: Infinity }}
-            className="text-blue-500"
+            className="text-emerald-500" // Use your accent color
           >
             |
           </motion.span>
@@ -58,7 +72,8 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2, duration: 0.8 }}
-          className="text-xl text-gray-600 dark:text-gray-300 mb-8"
+          className="text-xl mb-8 
+            text-gray-600 dark:text-gray-300"
         >
           Creating beautiful, functional web experiences
         </motion.p>
@@ -69,19 +84,28 @@ export default function Hero() {
           transition={{ delay: 2.5, duration: 0.8 }}
           className="space-x-4"
         >
+          
           <motion.button
             whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(0,0,0,0.1)" }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 bg-blue-600 text-white rounded-lg font-medium"
+            className="px-8 py-3 rounded-lg font-medium transition duration-300
+              /* Light/Dark BG - Use a solid Emerald color */
+              bg-emerald-600 text-white hover:bg-emerald-700"
           >
-           <a href="/projects"> View My Work</a>
+            <a href="/projects"> View My Work</a>
           </motion.button>
+          
+          
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-3 border-2 border-blue-600 text-blue-600 rounded-lg font-medium"
+            className="px-8 py-3 rounded-lg font-medium transition duration-300
+              /* Light Mode */
+              border-2 border-emerald-600 text-emerald-600 hover:bg-emerald-50
+              /* Dark Mode */
+              dark:border-emerald-400 dark:text-emerald-400 dark:hover:bg-emerald-400 dark:hover:text-gray-900"
           >
-           <a href="/contact"> Contact Me</a>
+            <a href="/contact"> Contact Me</a>
           </motion.button>
         </motion.div>
       </div>

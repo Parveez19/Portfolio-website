@@ -26,7 +26,7 @@ export default function About() {
 
           {/* Bio */}
           <div>
-            <h1 className="text-4xl font-bold mb-4 text-black">About Me</h1>
+            <h1 className="text-4xl font-bold mb-4 text-white">About Me</h1>
             <p className="text-gray-400 mb-4">
               Hi! I'm <span className="text-indigo-400 font-semibold">Parveez</span>, I am currently building my skills in backend development, data engineering, and practical software fundamentals.
             </p>
@@ -43,7 +43,7 @@ export default function About() {
 
         {/* Skills */}
         <section className="mt-16 max-w-4xl mx-auto">
-          <h2 className="text-2xl font-bold mb-6 text-center text-black">Skills & Technologies</h2>
+          <h2 className="text-2xl font-bold mb-6 text-center text-white">Skills & Technologies</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
             {[
               
